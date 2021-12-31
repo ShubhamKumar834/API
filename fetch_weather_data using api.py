@@ -50,14 +50,14 @@ print()
 tbl.field_names = ["Date/Time","State/City Name","Tempreture(°C)","Tempreture Feels(°C)","Humidity(%)","Wind Speed(Km/h)","Description"]
 print(tbl)
 
-#weather_txt = tbl.get_string(title = "CURRENT WEATHER DATA")
-#with open('weather output.txt','w') as fw:
-    #fw.write(weather_txt)
-    #print("Weather Data File Store Sucessfully. ")
-    #fw.close()
+weather_txt = tbl.get_string(title = "CURRENT WEATHER DATA")
+with open('weather output.txt','w') as fw:
+    fw.write(weather_txt)
+    print("Weather Data File Store Sucessfully. ")
+    fw.close()
 
 print()
 
-#with open('Weather output.txt', 'r') as fr:
-    #print(fr.read())
-    #print("File read sucessfully. ")
+with open('Weather output.txt', 'r') as fr:
+    print(fr.read())
+    print("File read sucessfully. ")

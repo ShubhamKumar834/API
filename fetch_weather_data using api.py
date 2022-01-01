@@ -15,8 +15,8 @@ while True:
         city_name = input("Enter City Name: ")
 
         #Our api key.
-        api_key = 'b402c46c9e7b6c12f101a1fb89db7779'
-        complete_url = 'http://api.openweathermap.org/data/2.5/weather?q={}&appid=b402c46c9e7b6c12f101a1fb89db7779&units=metric'.format(city_name)
+        api_key = 'put your api key here'
+        complete_url = 'http://api.openweathermap.org/data/2.5/weather?q={}&appid=your api key here&units=metric'.format(city_name)
         response = requests.get(complete_url)
 
         #Json data Object.
